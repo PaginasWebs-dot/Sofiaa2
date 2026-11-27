@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para Sofía</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="gate">
+  <h1>Para mi Vida ❤️ </h1>
+  <p>Para entrar, escribe la fecha en que empezó todo.</p>
+  <input id="clave" type="text" inputmode="numeric" placeholder="dd/mm/aaaa" autocomplete="off">
+  <button id="entrar">Entrar</button>
+  <p id="err" role="alert"></p>
+</section>
+
+<main id="main" hidden>
+  <header class="hero">
+    <h1>Feliz cumpleaños, Sofía</h1>
+    <p class="contador">Llevamos <strong id="dias">0</strong> días juntos</p>
+  </header>
+
+  <section class="historia">
+    <figure>
+      <div class="ph"><img src="fotos/foto1.jpg" alt="Nosotros al inicio"></div>
+      <figcaption>Nosotros, al principio.</figcaption>
+    </figure>
+    <figure>
+      <div class="ph"><img src="fotos/foto2.jpg" alt="El perrito en el veterinario"></div>
+      <figcaption>El día que me acompañaste al veterinario. Gracias por estar.</figcaption>
+    </figure>
+    <figure>
+      <div class="ph"><img src="fotos/foto3.jpg" alt="Haciendo waffles"></div>
+      <figcaption>El día que hicimos waffles juntos.</figcaption>
+    </figure>
+    <figure>
+      <div class="ph"><img src="fotos/foto4.jpg" alt="El día de la pizza"></div>
+      <figcaption>El día que la pizza no vino con borde de queso.</figcaption>
+    </figure>
+    <figure>
+      <div class="ph"><img src="fotos/foto5.jpg" alt="Una foto cualquiera de nosotros"></div>
+      <figcaption>Una foto cualquiera, porque contigo todo se ve bien.</figcaption>
+    </figure>
+    <figure class="chat">
+      <div class="ph"><img src="fotos/chat.jpg" alt="Captura del chat de 2020"></div>
+      <figcaption>Esto decía el chat en 2020. Mírate ahora.</figcaption>
+    </figure>
+  </section>
+
+  <section class="mas">
+    <h2>Más momentos</h2>
+    <div class="carrusel">
+      <img src="fotos/extra1.jpg" alt="Un momento nuestro">
+      <img src="fotos/extra2.jpg" alt="Un momento nuestro">
+      <img src="fotos/extra3.jpg" alt="Un momento nuestro">
+      <img src="fotos/extra4.jpg" alt="Un momento nuestro">
+    </div>
+    <p class="pista">Desliza para ver más</p>
+  </section>
+
+  <section class="cupon">
+    <h2>Cupón de regalo</h2>
+    <p>Vale por <b>una pizza con borde de queso</b> o por la comida que tú elijas.<br>Esta vez, sin excusas.</p>
+    <button id="canjear">Canjear</button>
+  </section>
+
+  <section class="carta">
+    <h2>Mi carta para ti</h2>
+    <p>Feliz cumpleaños número 22, mi vida 🎂✨</p>
+    <p>Hoy celebramos tu vuelta al sol y, de paso, estos 2.238 días caminando juntos. Parece increíble cómo ha pasado el tiempo y cómo cada día sigo eligiéndote con las mismas ganas o incluso más que al principio.
+
+Quiero que sepas que mi plan es acompañarte el resto de tu vida. Estar ahí en los días buenos, en los días pesados, en tus logros y en tus momentos de duda.
+
+Me ilusiona muchísimo imaginar nuestro futuro, formar una familia y tener hijos contigo, ver crecer lo que construimos juntos y seguir compartiendo la vida paso a paso.
+
+Amo despertar o quedarme dormido a tu lado, sentir esa paz de tenerte cerca... 
+aunque a veces termine acurrucado durmiendo a los pies de la cama. 
+Prometo seguir abranzandote al dormir, aunque no te aseguro nada XD.
+También tengo mil ganas de recorrer el mundo contigo: conocer lugares nuevos,
+ perdernos en calles que no conocemos, probar comidas raras, reírnos de cualquier tontería y coleccionar recuerdos en cada rincón del planeta.
+Gracias por ser mi lugar seguro y mi compañera favorita. Que estos 22 vengan cargados de salud, alegría, sueños cumplidos y muchísimos días más sumando a nuestro contador.
+
+¡Feliz cumpleaños, vida mía! Te amo con todo mi corazón ❤️</p>
+    <p>.</p>
+    <p class="firma">Tuyo, por siempre 😈.</p>
+  </section>
+
+  <button id="corazon" aria-label="Mensaje escondido">♥</button>
+  <p id="secreto" hidden>Por una vida juntos, descubriendo el mundo a tu lado.</p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

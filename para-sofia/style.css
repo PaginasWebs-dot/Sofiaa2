@@ -1,0 +1,58 @@
+:root{
+  --tinta:#2b1b3d; --lila:#f6f1fa; --rosa:#d94f7c; --queso:#f5c242; --suave:#e4d8ef;
+  --serif:Georgia,"Times New Roman",serif; --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--lila);color:var(--tinta);font-family:var(--sans);line-height:1.6;
+  padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+h1,h2{font-family:var(--serif);line-height:1.15;margin:0 0 .6rem}
+button{font:inherit;cursor:pointer;border:0;border-radius:999px;background:var(--rosa);color:#fff;
+  padding:.8rem 1.8rem;font-weight:600}
+button:focus-visible,input:focus-visible{outline:3px solid var(--queso);outline-offset:3px}
+
+#gate{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:2rem;gap:.8rem;background:var(--tinta);color:var(--lila)}
+#gate h1{font-size:2.6rem}
+#gate input{width:min(16rem,100%);padding:.8rem 1rem;border-radius:12px;border:2px solid var(--queso);
+  background:transparent;color:var(--lila);font-size:1.2rem;text-align:center}
+#gate input::placeholder{color:#b9a8cc}
+#err{min-height:1.5em;color:var(--queso);margin:0}
+
+main{max-width:34rem;margin:0 auto;padding:0 1.2rem 4rem}
+.hero{text-align:center;padding:4rem 0 2.5rem}
+.hero h1{font-size:clamp(2.2rem,9vw,3.2rem);color:var(--rosa)}
+.contador{font-size:1.15rem;margin:0}
+.contador strong{font-family:var(--serif);font-size:2.4rem;color:var(--tinta);display:block}
+
+.historia figure{margin:0 0 2.8rem}
+.ph{background:var(--suave);border-radius:18px;min-height:14rem;overflow:hidden;display:flex;
+  align-items:center;justify-content:center}
+.ph img{width:100%;display:block}
+.ph.vacio{color:#7a6890;font-size:.9rem;padding:1rem;text-align:center}
+figcaption{margin-top:.7rem;font-family:var(--serif);font-size:1.1rem;padding-left:.8rem;border-left:4px solid var(--queso)}
+.chat .ph{border:3px solid var(--rosa)}
+
+.cupon{background:var(--queso);border-radius:18px;padding:1.8rem 1.4rem;text-align:center;
+  border:3px dashed var(--tinta);margin-bottom:3rem}
+.cupon button{background:var(--tinta);margin-top:.6rem}
+.cupon.listo button{background:var(--rosa)}
+
+.carta{font-family:var(--serif);font-size:1.12rem}
+.carta h2{font-size:1.8rem}
+.firma{text-align:right;font-style:italic}
+
+#corazon{display:block;margin:3rem auto 0;background:none;color:var(--rosa);font-size:1.6rem;padding:.4rem .8rem}
+#secreto{text-align:center;font-family:var(--serif);font-size:1.25rem;color:var(--rosa);animation:sube .8s ease}
+@keyframes sube{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+.confeti{position:fixed;top:-1rem;font-size:1.3rem;pointer-events:none;animation:cae linear forwards;z-index:9}
+@keyframes cae{to{transform:translateY(110vh) rotate(540deg)}}
+@media (prefers-reduced-motion:reduce){.confeti{display:none}#secreto{animation:none}html{scroll-behavior:auto}}
+
+.mas{margin-bottom:3rem}
+.carrusel{display:flex;align-items:center;gap:.8rem;overflow-x:auto;scroll-snap-type:x mandatory;
+  margin:0 -1.2rem;padding:0 1.2rem .6rem}
+.carrusel img{flex:0 0 80%;width:80%;height:auto;max-height:70vh;object-fit:contain;
+  border-radius:18px;scroll-snap-align:center;background:var(--suave)}
+.pista{text-align:center;font-size:.9rem;color:#7a6890;margin:.2rem 0 0}

@@ -1,0 +1,11 @@
+Pon aquí tus fotos (JPG, menos de 500 KB cada una) con estos nombres:
+
+foto1.jpg  -> una foto de ustedes de los primeros tiempos
+foto2.jpg  -> el perrito y el veterinario
+foto3.jpg  -> el día de los waffles
+foto4.jpg  -> el día de la pizza
+foto5.jpg  -> una foto cualquiera de ustedes
+chat.jpg   -> la captura del chat (tapa números y datos de terceros)
+extra1.jpg a extra4.jpg -> fotos del carrusel (agrega o borra líneas en index.html si tienes más o menos)
+
+Borra este archivo si quieres.
